@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>honorCode Hackathon</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>honorCode Teacher Academy Hackathon</h1>
+        <p>This fun challenge will expose you to several extremely important concepts in software development.</p>
+        <ol>
+            <li>Importing external libraries</li>
+            <ul>
+                <li><a href="https://getbootstrap.com" target="_blank">Bootstrap</a>: A great CSS/JS library used to structuring and styling webpages, with many helpful components included.</li>
+                <li><a href="https://jquery.com/">jQuery</a>: A lightweight JavaScript library with powerful function for HTML manipulation and Ajax handling.</li>
+            </ul>
+            <li>Calling APIs (Application Programming Interfaces)</li>
+            <ul>
+                <li>This is how programs talk to each other!</li>
+                <li>The open web is filled with thousands!</li>
+            </ul>
+            <li>Where to look for help</li>
+            <ul>
+                <li>This is the most important skill as a programmer: Learning how to search Google efficiently, read new language/library documentation, search StackOverflow, etc.</li>
+            </ul>
+        </ol>
+        <p>Over the course of the next several hours, you'll work in small teams to implement your own webpage that:</p>
+        <ol type="a">
+            <li>Uses Bootstrap for page styling</li>
+            <li>Uses jQuery for making HTTP calls to an external API</li>
+            <li>Given a list of terms, displays a glossary with definitions fetched from an API</li>
+            <li>Has the ability for a user to enter more words into the glossary, automatically fetch the definition, and add an entry to the table</li>
+        </ol>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <h2>Wikipedia Lookup</h2>
+            </div>
+            <div class="col-4">
+                <form class="form-inline" id="searchForm">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <input type="text" id="new-word" class="form-control" placeholder="Add an entry">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Add</button>
+                </form>
+            </div>
+        </div>
+
+        <table class="table" id="glossary-table">
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--
+                    THIS SECTION IS WHERE THE TABLE IS FILLED IN!
+                    Note that the sample table rows below are commented out.
+                    The table rows you see in the webpage are generated the code written in app.js.
+                -->
+                <!-- <tr>
+                    <th><a href="https://en.wikipedia.org/wiki/Atlanta" target="_blank">Atlanta</a></th>
+                    <td>Atlanta (/ætˈlæntə/) is the capital and most populous city of the U.S. state of Georgia. With an estimated 2017 population
+                    of 486,290,[12] it is the cultural and economic center of the Atlanta metropolitan area, home to 5.8 million people and the
+                    ninth-largest metropolitan area in the United States.[6] Atlanta is the seat of Fulton County and a small portion of the
+                    city extends eastward into DeKalb County.</td>
+                </tr> -->
+                <!-- <tr>
+                    <th><a href="https://en.wikipedia.org/wiki/Peach" target="_blank">Peach</a></th>
+                    <td>The peach (Prunus persica) is a deciduous tree native to the region of Northwest China between the Tarim Basin and the north
+                    slopes of the Kunlun Mountains, where it was first domesticated and cultivated.[3] It bears an edible juicy fruit called
+                    a peach or a nectarine.</td>
+                </tr> -->
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="vendor/jquery-3.3.1.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script> -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/data.json"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
