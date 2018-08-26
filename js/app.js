@@ -59,12 +59,6 @@ $(document).ready(function () {
         });
     }
 
-    // Define function to handle user input submission
-    function userSearch(searchTerm) {
-        console.log('User search: ' + searchTerm);
-        callWiki(searchTerm);
-    }
-
     /*
         ============================================================
         After defining the variables and functions above,
@@ -81,11 +75,10 @@ $(document).ready(function () {
     // We add a "listener" to the search form, and tell it what action to take on submission
     // In this case, we get the value of the input, and call the userSearch function
     $('#searchForm').submit(function(event) {
-        input = $('#new-word').val();
-        $('#new-word').val('');
-        userSearch(input);
-        // input.val('');
-        return false;
+        input = $('#new-word').val();  // get the input value from the element with id "new-word"
+        $('#new-word').val('');  // clear the input field on webpage
+        callWiki(input);  // call Wikipedia. callWiki function also updates page after getting result
+        return false;  // return false so page doesn't reload after form submission
     });
 
 });
