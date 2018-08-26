@@ -69,7 +69,10 @@ $(document).ready(function () {
     // Get the JSON (data object) with all the preloaded words/definitions we need
     // After getting the JSON, we call the addJSONRows function to add them into the table
     $.getJSON('js/data.json', function (data) {
-        addJSONRows(data)
+        addJSONRows(data.complete);
+        data.wordList.forEach(word => {
+            callWiki(word); 
+        });
     });
 
     // We add a "listener" to the search form, and tell it what action to take on submission

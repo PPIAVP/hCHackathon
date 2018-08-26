@@ -1,10 +1,17 @@
-[
-    {
-        "title": "Atlanta",
-        "description": "Atlanta (/ætˈlæntə/) is the capital and most populous city of the U.S. state of Georgia. With an estimated 2017 population of 486,290, it is the cultural and economic center of the Atlanta metropolitan area, home to 5.8 million people and the ninth-largest metropolitan area in the United States. Atlanta is the seat of Fulton County and a small portion of the city extends eastward into DeKalb County."
-    },
-    {
-        "title": "Peach",
-        "description": "The peach (Prunus persica) is a deciduous tree native to the region of Northwest China between the Tarim Basin and the north slopes of the Kunlun Mountains, where it was first domesticated and cultivated.[3] It bears an edible juicy fruit called a peach or a nectarine."
-    }
-]
+
+{
+    "complete": [
+        {
+            "title": "Atlanta",
+            "description": "Atlanta (/ætˈlæntə/) is the capital and most populous city of the U.S. state of Georgia. With an estimated 2017 population of 486,290, it is the cultural and economic center of the Atlanta metropolitan area, home to 5.8 million people and the ninth-largest metropolitan area in the United States. Atlanta is the seat of Fulton County and a small portion of the city extends eastward into DeKalb County."
+        },
+        {
+            "title": "Peach",
+            "description": "The peach (Prunus persica) is a deciduous tree native to the region of Northwest China between the Tarim Basin and the north slopes of the Kunlun Mountains, where it was first domesticated and cultivated.[3] It bears an edible juicy fruit called a peach or a nectarine."
+        }
+    ],
+    "wordList": [
+        "HTML",
+        "Javascript"
+    ]
+}
