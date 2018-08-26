@@ -37,7 +37,7 @@ $(document).ready(function () {
         }
         // This jQuery function calls the Wikipedia API to get the title and description
         $.ajax({
-            url: 'http://en.wikipedia.org/w/api.php',
+            url: 'https://en.wikipedia.org/w/api.php',
             data: {
                 action: 'query',
                 list: 'search',
